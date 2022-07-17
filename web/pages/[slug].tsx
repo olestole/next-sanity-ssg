@@ -17,9 +17,11 @@ const ptComponents = {
         return null;
       }
       return (
-        <Image
+        <img
           alt={value.alt || " "}
           loading="lazy"
+          height={320}
+          width={240}
           src={urlFor(value)
             .width(320)
             .height(240)
@@ -41,11 +43,11 @@ const Post = ({
   return (
     <Layout>
       <article>
-        <h1>{title}</h1>
+        <h1 className="text-2xl">{title}</h1>
         <span>By {name}</span>
         {authorImage && (
           <div>
-            <Image
+            <img
               width={200}
               height={200}
               alt="Author image"

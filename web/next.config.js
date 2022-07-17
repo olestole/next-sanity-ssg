@@ -4,6 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ["cdn.sanity.io"],
+    loader: "akamai",
+    path: "",
   },
 };
 
